@@ -13,6 +13,7 @@ class Circulo : public Ponto
 	friend ostream &operator<<( ostream &, const Circulo & );
 public:
 	Circulo( double = 0.0, double = 0.0, double = 0.0 );
+	Circulo( const Circulo & );
 	~Circulo();
 	
 	double calcArea( ) { return PI * raio * raio; } 

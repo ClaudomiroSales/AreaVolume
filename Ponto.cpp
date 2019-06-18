@@ -5,6 +5,12 @@ Ponto::Ponto( double xout, double yout)
 {
 }
 
+Ponto::Ponto( const Ponto &pout )
+{
+	this->x = pout.x;
+	this->y = pout.y;
+}
+
 Ponto::~Ponto()
 {
 }

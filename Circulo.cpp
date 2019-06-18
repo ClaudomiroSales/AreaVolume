@@ -9,6 +9,12 @@ Circulo::Circulo( double xout, double yout, double raio )
 		raio = 1;
 }
 
+Circulo::Circulo( const Circulo &c_out )
+: Ponto( static_cast< Ponto >( c_out ) )
+{
+	this->raio = c_out.raio;
+}
+
 Circulo::~Circulo()
 {
 }

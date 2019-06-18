@@ -14,6 +14,12 @@ int main(int argc, char **argv)
 	cout << c << "\n";
 	cout << "Sua area eh " << c.calcArea() << "\n\n";
 	
+	//Usando o construtor de cópia
+	Circulo c2( c );
+	cout << c2 << "\n";
+	cout << "Sua area eh " << c2.calcArea() << "\n\n";
+	
+	
 	Cilindro cil( 4.5, 8.9, 3.9, 4.1 );
 	cout << cil << "\n";
 	cout << "A area da base eh " << cil.calcArea() << "\n";
