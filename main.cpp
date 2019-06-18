@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 	
 	//Usando o construtor de cópia
 	Circulo c2( c );
-	cout << c2 << "\n";
+	cout << "CopiaCirculo\n" << c2 << "\n";
 	cout << "Sua area eh " << c2.calcArea() << "\n\n";
 	
 	
@@ -24,6 +24,11 @@ int main(int argc, char **argv)
 	cout << cil << "\n";
 	cout << "A area da base eh " << cil.calcArea() << "\n";
 	cout << "O volume eh " << cil.calcVolume() <<"\n\n";
+	
+	Cilindro cil2( cil );
+	cout << "CilinCopia\n" << cil2 << "\n";
+	cout << "A area da base eh " << cil2.calcArea() << "\n";
+	cout << "O volume eh " << cil2.calcVolume() <<"\n\n";
 	
 	return 0;
 }

@@ -9,6 +9,12 @@ Cilindro::Cilindro( double x, double y, double raio, double altura )
 		altura = 1;
 }
 
+Cilindro::Cilindro( const Cilindro & circOut )
+:  Circulo( static_cast< Circulo >( circOut ) )
+{
+	this->altura = circOut.altura;
+}
+
 Cilindro::~Cilindro()
 {
 }
