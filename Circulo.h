@@ -1,6 +1,7 @@
 #ifndef CIRCULO_H
 #define CIRCULO_H
 
+
 #include "Ponto.h"
 
 #include <iostream>
@@ -12,9 +13,12 @@ class Circulo : public Ponto
 {
 	friend ostream &operator<<( ostream &, const Circulo & );
 public:
-	Circulo( double = 0.0, double = 0.0, double = 0.0 );
+	Circulo( );
+	Circulo( double, double, double = 0.0 );
 	Circulo( const Circulo & );
 	~Circulo();
+	
+	const Circulo &operator= ( const Circulo & );
 	
 	double calcArea( ) { return PI * raio * raio; } 
 

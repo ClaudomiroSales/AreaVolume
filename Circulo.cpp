@@ -1,12 +1,19 @@
 #include "Circulo.h"
 
+Circulo::Circulo( )
+: Ponto( )
+{
+	this->raio = 0;
+}
+
+
 Circulo::Circulo( double xout, double yout, double raio )
 :Ponto( xout, yout )
 {
-	if( raio > 0 )
+	if( raio >= 0.0 )
 		this->raio = raio;
 	else
-		raio = 1;
+		this->raio = 1.0;
 }
 
 Circulo::Circulo( const Circulo &c_out )
@@ -18,6 +25,17 @@ Circulo::Circulo( const Circulo &c_out )
 Circulo::~Circulo()
 {
 }
+
+const Circulo &Circulo::operator= ( const Circulo &cirOut )
+{
+	*static_cast< Ponto * >( this ) = static_cast< Ponto >( cirOut );	
+	
+	this->raio = cirOut.raio;	
+	
+	return *this;
+}
+
+
 
 ostream &operator<<( ostream &out, const Circulo &c )
 {

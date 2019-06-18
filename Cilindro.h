@@ -7,11 +7,15 @@ class Cilindro : public Circulo
 {
 	friend ostream &operator<<( ostream &, const Cilindro & );
 public:
-	Cilindro( double = 0.0, double = 0.0, double = 0.0, double = 0.0 );
+	Cilindro( );
+	Cilindro( double, double, double, double );
 	Cilindro( const Cilindro & );
 	~Cilindro();
+
+	const Cilindro &operator= ( const Cilindro & );
 	
 	double calcVolume( ) { return altura * Circulo::calcArea( ); }
+	
 	
 private:
 	double altura;

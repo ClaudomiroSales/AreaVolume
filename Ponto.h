@@ -8,9 +8,13 @@ class Ponto
 {
 	friend ostream &operator<<( ostream &, const Ponto & );
 public:
-	Ponto( double = 0.0, double = 0.0 );
+	Ponto( );
+	Ponto( double, double );
 	Ponto( const Ponto & );
 	~Ponto();
+	
+	const Ponto &operator= ( const Ponto & );
+	
 	
 private:
 
