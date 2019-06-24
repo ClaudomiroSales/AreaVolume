@@ -7,8 +7,8 @@ using std::cout;
 
 int main(int argc, char **argv)
 {
-	Ponto p(2.3, 4.5);
-	cout << "Ponto: " << p << "\n\n";
+	//Ponto p(2.3, 4.5);
+	//cout << "Ponto: " << p << "\n\n";
 	
 	Circulo c( 4.5, 9.5, -7.9 );
 	cout << c << "\n";

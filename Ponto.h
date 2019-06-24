@@ -15,8 +15,10 @@ public:
 	
 	const Ponto &operator= ( const Ponto & );
 	
+	virtual double calcArea( ) = 0;
 	
-private:
+	
+protected:
 
 	double x;
 	double y;
