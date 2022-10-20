@@ -28,7 +28,7 @@ Cilindro::~Cilindro()
 {
 }
 
-const Cilindro &Cilindro::Cilindro::operator= ( const Cilindro &cilOut )
+const Cilindro &Cilindro::operator=( const Cilindro &cilOut )
 {
 	*static_cast< Circulo * >( this ) = static_cast< Circulo >( cilOut );
 	
