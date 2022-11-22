@@ -2,8 +2,11 @@
 using std::cout;
 
 #include "Ponto.h"
+#include "Ponto.cpp"
 #include "Circulo.h"
+#include "Circulo.cpp"
 #include "Cilindro.h"
+#include "Cilindro.cpp"
 
 int main(int argc, char **argv)
 {
