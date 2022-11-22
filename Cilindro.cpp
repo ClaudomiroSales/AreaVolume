@@ -17,7 +17,7 @@ Cilindro::Cilindro( double x, double y, double raio, double altura )
 }
 
 Cilindro::Cilindro( const Cilindro & circOut )
-:  Circulo( static_cast< Circulo >( circOut ) )
+:  Circulo( circOut  )//:  Circulo( static_cast< Circulo >( circOut ) )
 {
 	this->altura = circOut.altura;
 }

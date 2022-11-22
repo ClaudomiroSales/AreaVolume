@@ -17,7 +17,7 @@ Circulo::Circulo( double xout, double yout, double raio )
 }
 
 Circulo::Circulo( const Circulo &c_out )
-: Ponto( static_cast< Ponto >( c_out ) )
+: Ponto( c_out )//: Ponto( static_cast< Ponto >( c_out ) )
 {
 	this->raio = c_out.raio;
 }
