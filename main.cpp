@@ -13,54 +13,53 @@ int main(int argc, char **argv)
 	Ponto p(2.3, 4.5);
 	cout << "Ponto: " << p << "\n\n";
 	
-	Circulo c( 4.5, 9.5, -7.9 );
-	cout << "c" << '\n';
-	cout << c << "\n";
-	cout << "Sua area eh " << c.calcArea() << "\n\n";
+	Circulo circulo1( 4.5, 9.5, -7.9 );
+	cout << "O circulo1 ( 4.5, 9.5, -7.9 )" << '\n';
+	cout << circulo1 << "\n";
+	cout << "A area do circulo1 eh " << circulo1.calcArea() << "\n\n";
 	
 	//Usando o construtor de cópia
-	Circulo c2( c );
-	cout << "c2" << '\n';
-	cout << "CopiaCirculo\n" << c2 << "\n";
-	cout << "Sua area eh " << c2.calcArea() << "\n\n";
+	Circulo circulo2( circulo1 );
+	cout << "circulo2( circulo1 ) - ( 4.5, 9.5, -7.9 )" << '\n';
+	cout << "O circulo2\n" << circulo2 << "\n";
+	cout << "A area do circulo2 eh " << circulo2.calcArea() << "\n\n";
 	
 	//Usando atribuição
-	cout << "c3" << '\n';
-	Circulo c3;
-	cout << "AtrCirculo\n" << c3 << "\n";
-	cout << "Sua area eh " << c3.calcArea() << "\n\n";	
+	cout << "Antes da atribuicao circulo3" << '\n';
+	Circulo circulo3;
+	cout << "circulo3\n" << circulo3 << "\n";
+	cout << "Area do circulo3 eh " << circulo3.calcArea() << "\n\n";	
 	
-	c3 = c;	
+	circulo3 = circulo1;	
 	
-	cout << "AtrCirculo\n" << c3 << "\n";
-	cout << "Sua area eh " << c3.calcArea() << "\n\n";	
-	
-	
-	Cilindro cil( 4.5, 8.9, 3.9, -4.1 );
-	cout << "cil" << '\n';
-	cout << cil << "\n";
-	cout << "A area da base eh " << cil.calcArea() << "\n";
-	cout << "O volume eh " << cil.calcVolume() <<"\n\n";
-	
-	Cilindro cil2( cil );
-	cout << "cil2" << '\n';
-	cout << "CilinCopia\n" << cil2 << "\n";
-	cout << "A area da base eh " << cil2.calcArea() << "\n";
-	cout << "O volume eh " << cil2.calcVolume() <<"\n\n";
+	cout << "O circulo3\n" << circulo3 << "\n";
+	cout << "Area do circulo3 eh " << circulo3.calcArea() << "\n\n";	
 	
 	
-	cout << "AtribCilindro\n\n";
-	Cilindro cil3;
-	cout << "cil3" << '\n';
-	cout << "CilinCopia\n" << cil3 << "\n";
-	cout << "A area da base eh " << cil3.calcArea() << "\n";
-	cout << "O volume eh " << cil3.calcVolume() <<"\n\n";
+	Cilindro cilindro1( 4.5, 8.9, 3.9, -4.1 );
+	cout << "O cilindro1" << '\n';
+	cout << cilindro1 << "\n";
+	cout << "A area da base eh " << cilindro1.calcArea() << "\n";
+	cout << "O volume do cilindro1 eh " << cilindro1.calcVolume() <<"\n\n";
 	
-	cil3 = cil;
+	Cilindro cilindro2( cilindro1 );
+	cout << "cilindro2( cilindro1 )" << '\n';
+	cout << "O cilindro2\n" << cilindro2 << "\n";
+	cout << "A area da base eh " << cilindro2.calcArea() << "\n";
+	cout << "O volume eh " << cilindro2.calcVolume() <<"\n\n";
 	
-	cout << "CilinCopia\n" << cil3 << "\n";
-	cout << "A area da base eh " << cil3.calcArea() << "\n";
-	cout << "O volume eh " << cil3.calcVolume() <<"\n\n";
+	
+	Cilindro cilindro3;
+	cout << "cilindro3 antes da atribuicao" << '\n';
+	cout << "O cilindro3\n" << cilindro3 << "\n";
+	cout << "A area da base eh " << cilindro3.calcArea() << "\n";
+	cout << "O volume eh " << cilindro3.calcVolume() <<"\n\n";
+	
+	cilindro3 = cilindro1;
+	
+	cout << "O cilindro3 depois da atribuicao\n" << cilindro3 << "\n";
+	cout << "A area da base eh " << cilindro3.calcArea() << "\n";
+	cout << "O volume eh " << cilindro3.calcVolume() <<"\n\n";
 	
 	
 	
